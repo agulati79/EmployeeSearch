@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="empSearch">
+	<head>
+		<title>Employee Search</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div ng-controller="empController as ec">
+			<search-along on-text-change="ec.empSearch(searchKey)"
+					        employees="ec.employees"> 
+			</search-along>
+		</div>
+		<script src="app.js"></script>
+		<script src="employeeCtrl.js"></script>
+		<script src="employeeComponent.js"></script>
+		<script src="employeeService.js"></script>
+	</body>
+</html>

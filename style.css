@@ -1,0 +1,121 @@
+body {
+  font: 100% Roboto;
+  color: #3f3f3f;
+  font-size: 14px;
+}
+
+i.fa-search {
+  color: #a09db1;
+}
+
+.fa-search, .fa-phone, .fa-at, .fa-file-text {
+  position: relative;
+  right: 8px;
+}
+
+.fa-at {
+  font-weight: bold;
+}
+
+.even {
+  background-color: #e8e8e8;
+}
+
+input {
+  width: 400px;
+  padding: 10px 10px 5px;
+  border: none;
+  border-bottom: 1px solid #7a768f;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  margin: 0 0 15px 10px;
+  font-size: 14px;
+}
+
+::-webkit-input-placeholder, :-ms-input-placeholder {
+  color: #7c7890;
+}
+
+.container {
+  padding: 0 15px 20px;
+  border-top: 5px solid #000;
+  position: relative;
+}
+
+.results {
+  position: absolute;
+  width: 100%;
+  border: 5px solid #443f5d;
+  margin: -1px 0 0 -20px;
+}
+
+.emp_result {
+  width: 300px;
+  padding: 20px 40px;
+}
+
+.emp_name {
+  padding: 10px 0px 0 5px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.emp_row {
+  padding: 10px 20px;
+}
+
+.emp_data {
+  background-color: #fff;
+}
+
+.search_input {
+  background-color: #443f5d;
+  padding: 10px 20px 5px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.result-subtext {
+  flex: 1 1 auto;
+}
+
+@media screen and (max-width: 480px) {
+  .emp_row {
+    padding: 10px 5px;
+    font-size: 10px;
+  }
+
+  p.policy-no, .phone_no, .email {
+    padding: 0px;
+  }
+
+  i.fa-search {
+    left: 3px;
+    font-size: 14px;
+  }
+
+  .fa-phone, .fa-at, .fa-file-text {
+    right: 4px;
+  }
+
+  input {
+    width: 230px;
+  }
+
+  .search_input {
+    padding: 10px 8px 5px;
+  }
+
+  ::-webkit-input-placeholder, :-ms-input-placeholder {
+    font-size: 10px;
+  }
+
+  .results {
+    margin-left: -8px;
+  }
+}

@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row search_input">
+    <i class="fa fa-search" aria-hidden="true"></i><input placeholder="SEARCH(Client Name / Policy Number)" type="text" ng-model="esc.searchKey" ng-change="esc.onTextChange({searchKey: esc.searchKey})">
+  <div class="row results">
+  <div class="col-md-12">
+  <div ng-repeat="data in esc.employees" class="row emp_data" >
+      <div class="col-md-12 col-sm-12 col-xs-12" ng-class-odd="'odd'" ng-class-even="'even'">
+         <p class="emp_name">{{data.first_name}}</p>
+        <div class="emp_row flex">
+       <p class="phone-no result-subtext"><i class="fa fa-phone" aria-hidden="true"></i>{{data.phone_no}}</p>
+        <p class="email result-subtext"><i class="fa fa-at" aria-hidden="true"></i>{{data.email}}</p>
+        <p class="policy-no result-subtext"><i class="fa fa-file-text" aria-hidden="true"></i>Policy No.{{data.policy_no}}</p>
+        </div>
+      </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
